@@ -669,6 +669,10 @@ a.button.button-light:hover {
   right: 0;
   transform: scale(-1, 1) translate(0, -50%);
 }
+.slider.slider-big {
+  flex-wrap: wrap;
+  gap: 30px 40px;
+}
 
 .slider .card {
   display: flex;
@@ -713,6 +717,40 @@ a.button.button-light:hover {
   margin: 0;
   font: 400 20px/23px "Georgia", serif;
   letter-spacing: 0.06em;
+}
+
+.slider-controls {
+  display: flex;
+  margin-top: 30px;
+}
+.slider-controls .control {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  background: #F6F6F6;
+  letter-spacing: 0.06em;
+  font: 400 20px/23px "Georgia", serif;
+  color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.slider-controls .control.curr {
+  background: #F1CDB3;
+}
+.slider-controls .control.inactive {
+  border-color: #CDCDCD;
+  color: #CDCDCD;
+}
+.slider-controls .control.inactive:hover {
+  cursor: default;
+}
+.slider-controls .control.active:hover {
+  cursor: pointer;
+  background: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 * {
