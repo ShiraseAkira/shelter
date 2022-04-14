@@ -1,3 +1,9 @@
+.help, .pets, .about {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -368,9 +374,6 @@ header {
 }
 
 .about {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 80px 40px 100px;
   display: flex;
   gap: 120px;
   justify-content: center;
@@ -391,6 +394,30 @@ header {
 }
 .about .content {
   max-width: 430px;
+}
+
+.pets {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.pets h3 {
+  font: 400 35px/45px "Georgia", serif;
+  color: #545454;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.06em;
+}
+
+.help h3 {
+  font: 400 35px/45px "Georgia", serif;
+  color: #545454;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.06em;
+  margin-bottom: 60px;
 }
 
 .headwrapper {
@@ -458,6 +485,85 @@ button {
 button:hover {
   cursor: pointer;
   background: #FDDCC4;
+}
+button.button-light {
+  box-shadow: inset 0 0 0 2px #F1CDB3;
+  background-color: #FAFAFA;
+}
+button.button-light:hover {
+  cursor: pointer;
+  background: #FDDCC4;
+  box-shadow: none;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.slider .before, .slider .after {
+  background: center no-repeat url(../assets/icons/Arrow.png);
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+.slider .before:hover, .slider .after:hover {
+  background: center no-repeat url(../assets/icons/Arrow.png), #FDDCC4;
+  border-color: #FDDCC4;
+  cursor: pointer;
+}
+.slider .before {
+  top: 50%;
+  left: 0;
+  transform: translate(75%, -50%);
+}
+.slider .after {
+  top: 50%;
+  right: 0;
+  transform: scale(-1, 1) translate(75%, -50%);
+}
+
+.slider .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding-bottom: 30px;
+}
+.slider .card h4 {
+  font: 400 20px/23px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 30px;
+}
+
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 120px;
+  row-gap: 27.5px;
+  justify-content: center;
+}
+.help-list .break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.help-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.help-list-card p {
+  margin: 0;
+  font: 400 20px/23px "Georgia", serif;
+  letter-spacing: 0.06em;
 }
 
 /*# sourceMappingURL=main.css.map */
