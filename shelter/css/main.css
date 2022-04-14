@@ -683,6 +683,7 @@ a.button.button-light:hover {
 }
 .slider .card:hover {
   cursor: pointer;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .slider .card:hover button {
   background: #FDDCC4;
