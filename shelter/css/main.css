@@ -523,10 +523,24 @@ p {
   background: #F6F6F6;
 }
 
+header.light {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.logo.logo-light .title {
+  color: #545454;
+}
+.logo.logo-light .subtitle {
+  color: #292929;
 }
 .logo .title {
   font: 400 32px/35px "Georgia", serif;
@@ -543,6 +557,16 @@ p {
 
 .main-nav {
   width: 483px;
+}
+.main-nav.main-nav-light ul li a {
+  color: #545454;
+}
+.main-nav.main-nav-light ul li a.active {
+  color: #292929;
+}
+.main-nav.main-nav-light ul li a:hover {
+  color: #292929;
+  cursor: pointer;
 }
 .main-nav ul {
   display: flex;
