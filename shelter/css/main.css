@@ -1,4 +1,4 @@
-.donation, .help, .pets, .about {
+footer, .donation, .help, .pets, .about {
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 40px 100px;
@@ -420,6 +420,7 @@ header {
 }
 
 .donation {
+  padding-bottom: 88px;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -461,7 +462,52 @@ header {
   max-width: 380px;
 }
 
-.headwrapper {
+footer {
+  padding-top: 56px;
+  padding-bottom: 60px;
+  background: bottom right 40px no-repeat url(../assets/img/footer-puppy.png);
+  display: flex;
+  gap: 160px;
+}
+footer .contacts, footer .locations {
+  display: flex;
+  flex-direction: column;
+}
+footer .contacts h3, footer .locations h3 {
+  font: 400 35px/45px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin: 0 0 40px;
+}
+footer .contacts a, footer .contacts p, footer .locations a, footer .locations p {
+  text-decoration: none;
+  font: 400 20px/23px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+footer .contacts a:hover, footer .contacts p:hover, footer .locations a:hover, footer .locations p:hover {
+  color: #FDDCC4;
+}
+footer .contacts a:last-of-type, footer .contacts p:last-of-type, footer .locations a:last-of-type, footer .locations p:last-of-type {
+  margin-bottom: 0;
+}
+footer .contacts a img, footer .contacts p img, footer .locations a img, footer .locations p img {
+  margin-right: 20px;
+}
+footer .contacts {
+  width: 280px;
+}
+footer .locations {
+  width: 300px;
+}
+footer .locations h3, footer .locations a {
+  margin-bottom: 34px;
+}
+
+.gradientwrapper {
   background: url(../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
