@@ -1,4 +1,4 @@
-.help, .pets, .about {
+.donation, .help, .pets, .about {
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 40px 100px;
@@ -397,7 +397,6 @@ header {
 }
 
 .pets {
-  background: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,6 +419,48 @@ header {
   margin-bottom: 60px;
 }
 
+.donation {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.donation h3 {
+  font: 400 35px/45px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0 0 20px;
+}
+.donation h5 {
+  font: 400 15px/17px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0 0 20px;
+}
+.donation a {
+  text-decoration: none;
+  font: 400 20px/23px "Georgia", serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 9px;
+  background: #F1CDB3;
+  margin: 0 0 20px;
+}
+.donation a:hover {
+  background: #FDDCC4;
+}
+.donation p {
+  color: #B2B2B2;
+  font: 12px/18px "Arial", sans-serif;
+}
+.donation .content {
+  max-width: 380px;
+}
+
 .headwrapper {
   background: url(../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
@@ -430,6 +471,10 @@ h2 {
 
 p {
   font: 400 15px/24px "Arial", sans-serif;
+}
+
+.wrapper-dark {
+  background: #F6F6F6;
 }
 
 .logo {
@@ -480,6 +525,7 @@ button {
   border: none;
   background-color: #F1CDB3;
   font: 400 17px/22px "Georgia", serif;
+  color: #292929;
   letter-spacing: 0.06em;
 }
 button:hover {
@@ -491,6 +537,31 @@ button.button-light {
   background-color: #FAFAFA;
 }
 button.button-light:hover {
+  cursor: pointer;
+  background: #FDDCC4;
+  box-shadow: none;
+}
+
+a.button {
+  text-decoration: none;
+  color: #292929;
+  padding: 15px 45px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #F1CDB3;
+  font: 400 17px/22px "Georgia", serif;
+  letter-spacing: 0.06em;
+}
+a.button:hover {
+  cursor: pointer;
+  background: #FDDCC4;
+}
+a.button.button-light {
+  box-shadow: inset 0 0 0 2px #F1CDB3;
+  background-color: #FAFAFA;
+}
+a.button.button-light:hover {
   cursor: pointer;
   background: #FDDCC4;
   box-shadow: none;
@@ -520,12 +591,12 @@ button.button-light:hover {
 .slider .before {
   top: 50%;
   left: 0;
-  transform: translate(75%, -50%);
+  transform: translate(0, -50%);
 }
 .slider .after {
   top: 50%;
   right: 0;
-  transform: scale(-1, 1) translate(75%, -50%);
+  transform: scale(-1, 1) translate(0, -50%);
 }
 
 .slider .card {
@@ -534,6 +605,13 @@ button.button-light:hover {
   align-items: center;
   background-color: #FAFAFA;
   padding-bottom: 30px;
+}
+.slider .card:hover {
+  cursor: pointer;
+}
+.slider .card:hover button {
+  background: #FDDCC4;
+  box-shadow: none;
 }
 .slider .card h4 {
   font: 400 20px/23px "Georgia", serif;
@@ -564,6 +642,10 @@ button.button-light:hover {
   margin: 0;
   font: 400 20px/23px "Georgia", serif;
   letter-spacing: 0.06em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
