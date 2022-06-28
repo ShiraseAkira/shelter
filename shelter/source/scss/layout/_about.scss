@@ -1,0 +1,52 @@
+.about {
+    h3 {
+        font: $h3-font;
+        color: $color-dark-l;
+        letter-spacing: 0.06em;
+        margin: 14px 0 25px;
+    }
+    p {
+        &:last-of-type {
+            margin-bottom: 14px;
+        }
+        font: $paragraph-font;
+        color: $color-dark-xl;
+        margin-bottom: 25px;
+    }
+    .content {
+        max-width: 430px;
+    }
+
+    @extend %section;
+
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+
+    @media screen and (max-width: 1279px) {
+        padding-top: 67px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 65px;
+        img {
+            max-width: 300px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding: 42px 25px 0;
+        gap: 25px;
+        h3 {
+            font: $h3-mobile;
+            text-align: center;
+            margin-top: 0;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 21px;
+        }
+        img {
+            max-width: 95%;
+            margin-bottom: 48px;
+        }
+    }
+}

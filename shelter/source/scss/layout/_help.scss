@@ -1,0 +1,18 @@
+.help {
+    h3 {
+        font: $h3-font;
+        color: $color-dark-l;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+    }
+    @extend %section;
+    @media screen and (max-width: 767px) {
+        padding: 42px 15px;
+        h3 {
+            font: $h3-mobile;
+            margin-bottom: 42px;
+        }
+    }
+}

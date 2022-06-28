@@ -1,0 +1,90 @@
+.slider {
+    .before, .after {
+        &:hover {
+            background: center no-repeat url(../assets/icons/Arrow.png),
+            $color-primary-light;
+            border-color: $color-primary-light;
+            cursor: pointer;
+        }
+        background: center no-repeat url(../assets/icons/Arrow.png);
+        position: absolute;        
+        width: 52px;
+        height: 52px;
+        border: 2px solid $color-primary;
+        border-radius: 100%;
+        box-sizing: border-box;
+    }
+    .before{
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    .after {
+        top: 50%;
+        right: 0;
+        transform: scale(-1, 1) translate(0, -50%);
+    }
+    &.slider-big {
+        flex-wrap: wrap;
+        @media screen and (max-width: 1279px) {
+            display: grid;
+            justify-content: center;
+            gap: 30px 40px;
+            grid-template-columns: repeat(2, 270px);
+            grid-template-rows: repeat(3, 435px);
+            .card:nth-of-type(n+4) {
+                display: flex;
+            }
+            .card:nth-of-type(n+7) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 270px;
+            .card:nth-of-type(n) {
+                display: flex;
+            }
+            .card:nth-of-type(n+4) {
+                display: none;
+            }
+        }
+    }
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+
+    @media screen and (max-width: 1279px) {
+        .card:nth-of-type(n+4) {
+            display: none;
+        }
+        .before, .after {
+            margin-top: 50px;
+            position: static;
+        }
+        gap: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        .card:nth-of-type(n+3) {
+            display: none;
+        }
+        h3 {
+            font: $h3-mobile;
+        }
+        .before, .after {
+            position: absolute;
+            top: 99%;
+        }
+        .before {
+            left: 19%
+        }
+        .after {
+            right: 19%
+        }
+    }
+}

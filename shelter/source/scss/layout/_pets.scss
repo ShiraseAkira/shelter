@@ -1,0 +1,29 @@
+.pets {
+    &_pets {
+        gap: 30px;
+        padding-bottom: 76px;
+    }
+    h3 {
+        font: $h3-font;
+        color: $color-dark-l;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 0.06em;
+    }
+    @extend %section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @media screen and (max-width: 767px) {
+        h3 {
+            font: $h3-mobile;
+        }
+        padding: 42px 10px;
+        gap: 42px;
+        .button {
+            margin-top: 72px;
+        }
+    }
+}

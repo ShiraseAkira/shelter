@@ -1,0 +1,91 @@
+.donation {
+    h3 {
+        font: $h3-font;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin: 0 0 20px;
+    }
+    h5 {
+        font: $h5-font;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin: 0 0 20px;
+    }
+    a {
+        &:hover{
+            background: $color-primary-light;
+        }
+        text-decoration: none;
+        font: $h4-font;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-radius: 9px;
+        background: $color-primary;
+
+        margin: 0 0 20px;
+    }
+    p {
+        color: $color-dark-m;
+        font: 12px/18px "Arial", sans-serif;
+    }
+    .content {
+        max-width: 380px;
+    }
+    @extend %section;
+    padding-bottom: 88px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1279px) {
+        flex-direction: column-reverse;
+        padding-bottom: 101px;
+        &>img {
+            margin-top: 17px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h3 {
+            font: $h3-mobile;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        h5 {
+            text-align: center;
+            font: $paragraph-font;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 0;
+        }
+        a {
+            font: $h5-font;
+            letter-spacing: 0.06em;
+            color: $color-dark-l;
+            
+            display: flex;
+            width: 281px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 9px;
+            background: $color-primary;
+    
+            margin: 0 auto 20px;
+        }
+        p {
+            padding: 0 10px;
+            text-align: justify;
+        }
+        img {
+            max-width: 85%;
+        }
+        padding: 42px 10px 43px;
+        gap: 15px;
+    }
+}

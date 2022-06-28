@@ -1,0 +1,21 @@
+header.light {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    @media screen and (max-width: 1279px) {
+        padding: 30px;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top:0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+header .burger-pets {
+    background: url(../assets/icons/Burger-black.png);
+}

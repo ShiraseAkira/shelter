@@ -1,0 +1,48 @@
+button {
+    &:hover {
+        cursor: pointer;
+        background: $color-primary-light;
+    }
+    padding: 15px 45px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $color-primary;
+    font: $button-font;
+    color: $color-dark-3xl;
+    letter-spacing: 0.06em;
+    &.button-light {
+        &:hover {
+            cursor: pointer;
+            background: $color-primary-light;
+            box-shadow: none;
+        }
+        box-shadow: inset 0 0 0 2px $color-primary;
+        background-color: $color-light-s;
+    }
+}
+
+a.button {
+    &:hover {
+        cursor: pointer;
+        background: $color-primary-light;
+    }
+    text-decoration: none;
+    color: $color-dark-3xl;
+    padding: 15px 45px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $color-primary;
+    font: $button-font;
+    letter-spacing: 0.06em;
+    &.button-light {
+        &:hover {
+            cursor: pointer;
+            background: $color-primary-light;
+            box-shadow: none;
+        }
+        box-shadow: inset 0 0 0 2px $color-primary;
+        background-color: $color-light-s;
+    }
+}

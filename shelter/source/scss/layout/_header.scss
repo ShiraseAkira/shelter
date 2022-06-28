@@ -1,0 +1,24 @@
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px 0;
+    margin-bottom: 60px;
+    .burger {
+        display: none;
+    }
+    @media screen and (max-width: 1279px) {
+        padding: 30px 30px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 30px 53px 0 10px;
+        align-items: center;
+        .burger {
+            display: block;
+            width: 30px;
+            height: 22px;
+            background: url(../assets/icons/Burger.png);
+        }
+    }
+}

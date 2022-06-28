@@ -1,0 +1,43 @@
+.main-nav {
+    &.main-nav-light {
+        ul {
+            li {
+                a {
+                    &.active {
+                        color: $color-dark-3xl;
+                    }
+                    &:hover {
+                        color: $color-dark-3xl;
+                        cursor: pointer;
+                    }
+                    color: $color-dark-l;
+                }
+            }
+        }
+    }
+    ul {
+        li {
+            a {
+                &.active {
+                    color: $color-light-s;
+                    border-bottom: 3px solid $color-primary;
+                }
+                &:hover {
+                    color: $color-light-s;
+                    cursor: pointer;
+                }
+                display: block;
+                color: $color-dark;
+                text-decoration: none;
+                font: $nav-link-font;
+            }
+        }
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+    width: 483px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

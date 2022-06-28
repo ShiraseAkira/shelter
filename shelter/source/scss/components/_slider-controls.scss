@@ -1,0 +1,56 @@
+.slider-controls {
+    .control {
+        &.curr {
+            background: $color-primary;
+        }
+        &.inactive {
+            &:hover {
+                cursor: default;
+            }
+            border-color: $color-dark;
+            color: $color-dark;
+        }
+        &.active {
+            &:hover {
+                cursor: pointer;
+                background: $color-primary-light;
+                border-color: $color-primary-light;
+            }
+        }
+        width: 52px;
+        height: 52px;
+
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+
+        background: $color-light-l;
+        letter-spacing: 0.06em;
+
+        font: $h4-font;
+        color: $color-dark-3xl;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 10px;
+    }
+    display: flex;
+    margin-top: 30px;
+
+    @media screen and (max-width: 1279px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    @media screen and (max-width: 767px) {
+        grid-column-end: 2;
+        .control {
+            margin: 0 10px 0 0;
+        }
+        .control:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

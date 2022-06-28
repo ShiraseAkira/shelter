@@ -1,0 +1,22 @@
+.slider .card {
+    &:hover {
+        button {
+            background: $color-primary-light;
+            box-shadow: none;
+        }
+        cursor: pointer;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+
+    h4 {
+        font: $h4-font;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-light-s;
+    padding-bottom: 30px;
+}
